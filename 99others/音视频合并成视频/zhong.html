@@ -4,21 +4,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./zhong.css">
   <title>Document</title>
 </head>
 
 <body>
+  <audio id="audio" src="./img/zhong.mp3"></audio>
   <main>
     <div id="controls">
-      <button id="start-recording">Start recording</button>
+      <button style="height: 42px;width: 200px" id="start-recording">开始</button>
       <button id="end-recording" style="display: none;">End recording</button>
     </div>
-    <canvas width="640" height="480"></canvas>
+    <canvas width="375" height="480"></canvas>
     <p id="recording-status"></p>
   </main>
   <script src="./webm-muxer.js"></script>
-  <script src="./script.js"></script>
+  <script src="./zhong.js"></script>
 </body>
 
 </html>

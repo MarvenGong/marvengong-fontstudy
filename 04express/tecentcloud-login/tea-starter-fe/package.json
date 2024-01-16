@@ -1,0 +1,49 @@
+{
+  "name": "@tencent/tea-app-fe",
+  "version": "1.0.0",
+  "description": "The fe tea app",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tea dev",
+    "build": "tea build",
+    "scan": "tea scan"
+  },
+  "keywords": [
+    "tea",
+    "app",
+    "fe"
+  ],
+  "engines": {},
+  "license": "UNLICENSED",
+  "browserslist": [
+    "defaults",
+    "last 3 versions",
+    "not ie < 11"
+  ],
+  "dependencies": {
+    "@jsplumb/community": "4.0.0-RC20",
+    "@tencent/qcloud-account-lib": "^0.4.2",
+    "@tencent/tea-component": "^2.2.1",
+    "axios": "^0.21.0",
+    "core-js": "^3.6.5",
+    "history": "^4.9.0",
+    "json-diff": "^0.5.4",
+    "jsondiffpatch": "^0.4.1",
+    "mockjs": "^1.1.0",
+    "moment": "^2.24.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.2.0",
+    "react-use": "^15.3.4",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.11.0",
+    "@tencent/tea-scripts": "^2.0.0",
+    "@tencent/tea-types": "^0.1.9",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/webpack": "^4.4.32"
+  }
+}

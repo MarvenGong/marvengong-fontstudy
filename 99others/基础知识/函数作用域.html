@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    /**
+     * 返回浏览器信息，
+     * 返回值{type:浏览器类型,version:浏览器版本}
+     * @returns {*}
+     */
+     var getExplorerInfo = function () {
+        var explorer = window.navigator.userAgent.toLowerCase();
+        // ie
+        if (explorer.indexOf("msie") >= 0) {
+            var ver = explorer.match(/msie ([\d.]+)/)[1];
+            return {
+                type: "IE",
+                version: ver
+            };
+        }
+        // firefox
+        else if (explorer.indexOf("firefox") >= 0) {
+            var ver = explorer.match(/firefox\/([\d.]+)/)[1];
+            return {
+                type: "Firefox",
+                version: ver
+            };
+        }
+        // Edge
+        else if (explorer.indexOf("edge") >= 0) {
+            var ver = explorer.match(/edge\/([\d.]+)/)[1];
+            return {
+                type: "Edge",
+                version: ver
+            };
+        }
+        // Chrome
+        else if (explorer.indexOf("chrome") >= 0) {
+            var ver = explorer.match(/chrome\/([\d.]+)/)[1];
+            return {
+                type: "Chrome",
+                version: ver
+            };
+        }
+
+        // Opera
+        else if (explorer.indexOf("opera") >= 0) {
+            var ver = explorer.match(/opera.([\d.]+)/)[1];
+            return {
+                type: "Opera",
+                version: ver
+            };
+        }// Safari
+        else if (explorer.indexOf("Safari") >= 0) {
+            var ver = explorer.match(/version\/([\d.]+)/)[1];
+            return {
+                type: "Safari",
+                version: ver
+            };
+        }
+    }
+    alert(getExplorerInfo().type)
+    function dealTree() {
+      let root = {};
+      const rootEle = ary.find(function(item) {
+        return item.pid === -1;
+      })
+      root = { ...rootEle, children: [] };
+
+      function deep(obj) {
+        if (!obj.children) obj.children = [];
+        for(let i = 0; i < ary.length; i++) {
+          const a = ary[i];
+          if (obj.id === a.pid) obj.children.push({...a});
+        }
+        for (let b of obj.children) {
+          deep(b);
+        }
+      }
+      deep(root);
+      return root
+    }
+    const ary = [
+      { name: 'root', id: 1, pid: -1},
+      { name: 'aaa', id: 2, pid: 1 },
+      { name: 'bbb', id: 3, pid: 1 },
+      { name: 'ccc', id: 4, pid: 2 },
+      { name: 'ddd', id: 5, pid: 2 },
+      { name: 'eee', id: 6, pid: 3 },
+    ]
+    console.log(dealTree(ary));
+  </script>
+  <img width="100" height="100" src="https://marvengong.github.io/vue2-viewer/examples/assets/logo.png" alt="" srcset="">
+</body>
+</html>

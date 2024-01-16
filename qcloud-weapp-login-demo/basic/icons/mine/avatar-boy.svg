@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="128px" height="128px" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:url(#Rectangle-path_1_);}
+	.st2{fill:url(#Shape_8_);}
+	.st3{fill:#222222;}
+	.st4{fill:#FFDFDD;}
+	.st5{fill:#FFF2F1;}
+	.st6{fill:#FFC6C1;}
+</style>
+<rect class="st0" width="128" height="128"/>
+<title>icon-头像-默认头像 男</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1">
+	<g id="icon-头像-默认头像-男">
+		
+			<radialGradient id="Rectangle-path_1_" cx="-887.5078" cy="600.7891" r="0.5" gradientTransform="matrix(128 0 0 -128 113665 76965)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
+			<stop  offset="1" style="stop-color:#F8F8F8"/>
+		</radialGradient>
+		<rect id="Rectangle-path" class="st1" width="128" height="128"/>
+		
+			<linearGradient id="Shape_8_" gradientUnits="userSpaceOnUse" x1="-883.6515" y1="567.3906" x2="-882.6711" y2="567.3906" gradientTransform="matrix(78.9333 0 0 -12.8 69774.8672 7384.2017)">
+			<stop  offset="0" style="stop-color:#00A4FF"/>
+			<stop  offset="1" style="stop-color:#006EFF"/>
+		</linearGradient>
+		<path id="Shape" class="st2" d="M103.5,128c-0.9-7.1-18.1-12.8-39.5-12.8s-38.6,5.7-39.5,12.8H103.5z"/>
+		<g id="Group" transform="translate(25.600000, 44.800000)">
+			<polygon id="Shape_1_" class="st3" points="0,1.1 3.2,30.9 6.4,30.9 6.4,0 0,0 			"/>
+			<polygon id="Shape_2_" class="st3" points="70.4,1.1 70.4,32 73.6,32 76.8,2.1 76.8,1.1 			"/>
+		</g>
+		<path id="Shape_3_" class="st4" d="M79.4,128c-1.6-8.7-2.1-14.4-1.4-17.1c1-4.1-28.3-4.5-28,0c0.2,3-0.3,8.7-1.4,17.1H79.4z"/>
+		<path id="Shape_4_" class="st4" d="M36.8,66.1C34.2,64.8,24,62.8,24,72.5c0,9.6,5.5,11.9,7.5,13.9c1.9,1.9,7.9,3,8.5,1.1
+			S39.4,67.4,36.8,66.1z M90.4,66.1c-2.6,1.3-3.8,19.4-3.2,21.3s6.5,0.9,8.4-1.1c1.9-1.9,7.4-4.3,7.4-13.9
+			C103.1,62.8,92.9,64.8,90.4,66.1z"/>
+		<path id="Shape_5_" class="st5" d="M65.1,116.3c-0.4,0-1.1,0-1.1,0s-0.6,0-1.1,0c-19.2,0-30.9-21-30.9-58V36h64v22.2
+			C96,95.2,84.3,116.3,65.1,116.3z"/>
+		<path id="Shape_6_" class="st3" d="M97.1,46.9v9.5c-2,0-4.1-0.5-4.9-1.7c-1.1-1.7-3.5-5.6-4.7-8.9c-1.3-3.4-0.9-6.4-6.4-6.4H67.2
+			H52.3h-5.3c-4.5,0-5.1,3-6.4,6.4c-1.2,3.3-3.6,7.2-4.7,8.9c-0.8,1.2-2.9,1.7-4.9,1.7V45.9h-5.3v-1.1c0-7.1,3.2-13.5,8.2-17.8
+			c-2.5-3.7-3.9-8.3-3.9-13.1h40.5c17.7,0,32,14.3,32,32v1.1H97.1z"/>
+		<path id="Shape_7_" class="st6" d="M64,107c-6.6,0-12-5.4-12-12h24C76,101.6,70.6,107,64,107z"/>
+	</g>
+</g>
+</svg>

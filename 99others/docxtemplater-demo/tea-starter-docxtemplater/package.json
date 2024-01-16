@@ -1,0 +1,48 @@
+{
+  "name": "@tencent/tea-app-docxtemplater",
+  "version": "1.0.0",
+  "description": "The docxtemplater tea app",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tea dev",
+    "build": "tea build",
+    "scan": "tea scan"
+  },
+  "keywords": [
+    "tea",
+    "app",
+    "docxtemplater"
+  ],
+  "engines": {},
+  "license": "UNLICENSED",
+  "browserslist": [
+    "defaults",
+    "last 3 versions",
+    "not ie < 11"
+  ],
+  "dependencies": {
+    "@tencent/tea-component": "^2.2.1",
+    "core-js": "^3.6.5",
+    "docx": "^7.3.0",
+    "docxtemplater": "^3.28.2",
+    "file-saver": "^2.0.5",
+    "history": "^4.9.0",
+    "html-docx-js": "^0.3.1",
+    "jszip-utils": "^0.1.0",
+    "moment": "^2.24.0",
+    "pizzip": "^3.1.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.7"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.11.0",
+    "@tencent/tea-scripts": "^2.0.0",
+    "@tencent/tea-types": "^0.1.9",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/webpack": "^4.4.32"
+  }
+}

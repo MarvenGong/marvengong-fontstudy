@@ -1,0 +1,30 @@
+{
+	"name": "web-simple",
+	"version": "3.0.1",
+	"manifest_version": 2,
+	"description": "web content extraction",
+	"permissions": [
+		"activeTab",
+		"http://pdfcrowd.com/*"
+	],
+	"browser_action": {
+		"default_icon": "image/bird.png",
+		"default_title": "clippe content"
+	},
+	"background": {
+		"scripts": [
+			"javascript/lib/jquery-1.11.3.min.js","javascript/myscript.js"
+		]
+		//	  "persistent": false
+	},
+	"icons": {
+		"16": "image/bird.png"
+	},
+	"web_accessible_resources": [
+		"css/bootstrap.min.css",
+		"background.html"
+	],
+	"externally_connectable": {
+		"matches":["*://*/*"]
+	}
+}

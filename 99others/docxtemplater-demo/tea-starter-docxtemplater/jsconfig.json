@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "@tea/app": ["app"],
+      "@tea/app/*": ["app/*"],
+      "@src/*": ["./src/*"]
+    },
+    "checkJs": true,
+    "jsx": "preserve",
+    "noImplicitAny": false
+  },
+  "exclude": ["dist"]
+}

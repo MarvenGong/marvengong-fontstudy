@@ -1,0 +1,17 @@
+{
+	"pages": [
+		"pages/index"
+	],
+	"window": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "能碳工场",
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff",
+		"backgroundColorBottom": "#f8f8f8",
+		"backgroundTextStyle": "dark",
+		"enablePullDownRefresh": false
+	},
+	"navigateToMiniProgramAppIdList": [
+		"wxe2039b83454e49ed"
+	]
+}

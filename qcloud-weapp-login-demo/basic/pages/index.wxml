@@ -1,0 +1,37 @@
+<view class="mine">
+	<view class="card header-card">
+		<view
+			class="mine-header need-hover"
+			bindtap="onTapHeader"
+			hover-class="hover"
+			hover-start-time="20"
+			hover-stay-time="70"
+			data-url="/pages/home-tabs/mine/user-center/user-center"
+		>
+			<view class="header-content">
+				<view class="header-title text-overflow" wx:if="{{!hasInit}}">
+					<view class="spinner">
+						<view class="bounce1"/>
+						<view class="bounce2"/>
+						<view class="bounce3"/>
+					</view>
+				</view>
+				<block wx:else>
+					<view class="header-title text-overflow">
+						{{hasLogin ? username : '登录'}}
+					</view>
+					<view class="header-desc text-overflow">
+						{{hasLogin ? uin : '前往腾讯云统一登录'}}
+					</view>
+				</block>
+			</view>
+			<view class="user-avatar">
+				<image src="/icons/mine/avatar-default.svg" class="default-avatar show"/>
+				<image src="/icons/mine/avatar-boy.svg" class="login-avatar {{ hasLogin ? 'show' : '' }}"/>
+			</view>
+			<view class="item-desc">
+				<image src="/icons/icon/arrow.svg" class="desc-arrow"/>
+			</view>
+		</view>
+	</view>
+</view>

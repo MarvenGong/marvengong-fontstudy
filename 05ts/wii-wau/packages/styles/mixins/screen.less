@@ -1,0 +1,26 @@
+@import "../themes/index";
+
+// 勿用，当前问题在于，stylelint 不能识别其中的代码
+.screenMin(@v1) {
+  @media screen and (min-width: @wau-min-width) {
+    & {
+      @v1();
+    }
+  }
+}
+
+.screenMax(@v2) {
+  @media screen and (max-width: @wau-min-width) {
+    & {
+      @v2();
+    }
+  }
+}
+
+// 设置 PC 主体可视区
+.screenMain() {
+  .screenMin({
+    min-width: @wau-min-width; 
+    padding: 0 calc(~"50% - @{wau-min-width} / 2") ;
+  });
+}

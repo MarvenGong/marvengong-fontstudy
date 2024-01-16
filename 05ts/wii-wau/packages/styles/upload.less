@@ -1,0 +1,121 @@
+@color0: #ffffff;
+
+@width0: 100%;
+@width1: 60px;
+
+@height0: 100%;
+@height1: 60px;
+@color_1: #fff;
+
+.r-upload {
+  .r-upload {
+    background: @color0;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    height: @height1;
+    line-height: @height1;
+    margin-right: 4px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: @width1;
+    img {
+      height: @height0;
+      width: @width0;
+    }
+    &:hover {
+      .r-upload-cover {
+        display: block;
+      }
+    }
+  }
+  .r-upload-cover {
+    background: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    i {
+      color: @color0;
+      cursor: pointer;
+      font-size: 20px;
+      margin: 0 2px;
+    }
+  }
+  .upload-btn {
+    margin-bottom: 15px;
+  }
+  &.upload-inline {
+    float: left;
+    .ivu-upload-select {
+      display: inline;
+    }
+  }
+  .notice-text {
+    display: inline-block;
+    // margin-left: 10px;
+    // width: calc(100% - 90px);
+    width: 100%;
+    overflow: hidden;
+  }
+  .r-upload-list {
+    display: inline-block;
+    width: 140px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    position: relative;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    // margin-top: 20px;
+    margin-right: 4px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    .r-upload-img,
+    .r-upload-video,
+    .r-upload-audio {
+      width: 140px;
+      height: 80px;
+    }
+    &:hover {
+      .r-upload-list-cover {
+        display: block;
+      }
+    }
+  }
+  .ivu-upload + .r-upload-list {
+    margin-top: 20px;
+  }
+  .r-upload-list-cover {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    i {
+      color: @color_1;
+      font-size: 20px;
+      cursor: pointer;
+      margin: 0 2px;
+    }
+  }
+  .r-preview-title {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .delete-btn {
+    cursor: pointer;
+  }
+}

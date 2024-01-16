@@ -1,0 +1,29 @@
+.w-img {
+  display: inline-block;
+  overflow: hidden;
+  font-size: 0;
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+  &-warrper {
+    position: relative;
+  }
+  .error-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 56px;
+    height: 57px;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  &-border {
+    display: inline-block;
+  }
+  &-item {
+    margin: 2px 14px 2px 0;
+  }
+  &.hidden {
+    display: none;
+  }
+}

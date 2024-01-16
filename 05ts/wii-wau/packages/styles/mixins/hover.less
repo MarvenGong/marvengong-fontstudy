@@ -1,0 +1,15 @@
+@import "./screen.less";
+
+.hover(@opacityNum: 0.8, @timer: 0.3s, @v3: {}) {
+  transition: all @timer;
+
+  .screenMin({
+    &:hover {
+      opacity: @opacityNum; @v3();
+    }});
+
+  .screenMax({
+    &:active {
+      opacity: @opacityNum; @v3();
+    }});
+}

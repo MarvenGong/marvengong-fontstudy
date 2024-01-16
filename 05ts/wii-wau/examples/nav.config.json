@@ -1,0 +1,89 @@
+[
+  {
+    "name": "开发指南",
+    "children": [
+      {
+        "path": "/installation",
+        "name": "安装"
+      },
+      {
+        "path": "/animate",
+        "name": "内置过渡动画"
+      }
+    ]
+  },
+  {
+    "name": "组件",
+    "groups": [
+      {
+        "groupName": "Basic",
+        "list": [
+          {
+            "path": "/button",
+            "title": "Button 按钮"
+          },
+          {
+            "path": "/page-content",
+            "title": "Content 布局"
+          },
+          {
+            "path": "/page-header",
+            "title": "Header 布局"
+          }
+        ]
+      },
+      {
+        "groupName": "Form",
+        "list": [
+          {
+            "path": "/upload",
+            "title": "Upload 上传"
+          }
+        ]
+      },
+      {
+        "groupName": "Data",
+        "list": [
+          {
+            "path": "/property-table",
+            "title": "Table 表格"
+          }
+        ]
+      },
+      {
+        "groupName": "Others",
+        "list": [
+          {
+            "path": "/image",
+            "title": "Image 图片"
+          },
+          {
+            "path": "/photo-swipe",
+            "title": "Swipe 轮播图"
+          },
+          {
+            "path": "/delete-modal",
+            "title": "DeleteModal 删除"
+          },
+          {
+            "path": "/iframe",
+            "title": "Iframe 框架"
+          },
+          {
+            "path": "/auth",
+            "title": "Auth 权限"
+          },
+          {
+            "path": "/code-editor",
+            "title": "CodeEditor 编码"
+          },
+          {
+            "path": "/richtext-editor",
+            "title": "RichtextEditor 富文本"
+          }
+        ]
+      }
+    ]
+  }
+
+]

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <main>
+    <h1>WebM muxer demo - draw something!</h1>
+    <h2>The live canvas state and your microphone input will be recorded<br>and muxed into a WebM file.</h2>
+    <div id="controls">
+      <button id="start-recording">Start recording</button>
+      <button id="end-recording" style="display: none;">End recording</button>
+    </div>
+    <canvas width="640" height="480"></canvas>
+    <p id="recording-status"></p>
+  </main>
+  <script src="./webm-muxer.js"></script>
+  <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "page-header": "./packages/page-header/index.js",
+  "page-content": "./packages/page-content/index.js",
+  "property-table": "./packages/property-table/index.js",
+  "photo-swipe": "./packages/photo-swipe/index.js",
+  "delete-modal": "./packages/delete-modal/index.js",
+  "code-editor": "./packages/auth/index.js",
+  "richtext-editor": "./packages/richtext-editor/index.js",
+  "button": "./packages/button/index.js",
+  "image": "./packages/image/index.js",
+  "upload": "./packages/upload/index.js",
+  "animate": "./packages/animate/index.js",
+  "auth": "./packages/auth/index.js",
+  "iframe": "./packages/iframe/index.js"
+}

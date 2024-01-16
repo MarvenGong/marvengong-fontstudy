@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="180826CVM监控" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="CVM监控" transform="translate(-283.000000, -667.000000)" fill="#BBBBBB">
+            <g id="折线图" transform="translate(0.000000, 638.000000)">
+                <g id="Group-44-Copy-14">
+                    <path d="M297,41 L301,41 L301,37 L297,37 L297,41 Z M301,51 L303,51 L303,53 L297,53 L297,45 L295,45 L295,43 L301,43 L301,51 Z M299,57 C292.382,57 287,51.618 287,45 C287,38.382 292.382,33 299,33 C305.618,33 311,38.382 311,45 C311,51.618 305.618,57 299,57 Z M299,29 C290.164,29 283,36.164 283,45 C283,53.836 290.164,61 299,61 C307.836,61 315,53.836 315,45 C315,36.164 307.836,29 299,29 Z" id="Fill-1-Copy"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

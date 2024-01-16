@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="file" name="file" id="file1"></input>
+  <div id="output" style="width: 500px; height: 300px;background-color: #ddd;"></div>
+  <input id="btn-share-screen" type="button" value="共享窗口到视频" />
+  <br>
+  <video src="" autoplay playsinline id="video-share" controls height="300"></video>
+  <script>
+    const output = document.querySelector('#output');
+    document.querySelector('#file1').addEventListener('change', function(e) {
+      console.log(e.target.files);
+      const file = e.target.files[0];
+      if ( /image/.test(file.type)) {
+        const fileReader = new FileReader();
+        fileReader.readAsDataURL(file);
+        fileReader.onload = function() {
+          const img = document.createElement('img');
+          img.src = fileReader.result;
+          img.width = 300;
+          output.appendChild(img)
+        }
+      }
+    });
+    output.addEventListener('drop', function(event) {
+      event.preventDefault();
+      if (event.type === 'drop') {
+        const files = event.dataTransfer.files;
+        for (let file of files) {
+          output.innerHTML += `${file.name}<br/>`
+        }
+      }
+    })
+    output.addEventListener('dragenter', function(event) {
+      event.preventDefault();
+    })
+    output.addEventListener('dragover', function(event) {
+      event.preventDefault();
+    })
+    document.querySelector('#btn-share-screen').addEventListener('click', function() {
+      navigator.mediaDevices.getDisplayMedia({
+        video : {
+            frameRate   : 24,
+            width       : 1920, // fdsfds刚发的
+            height      : 1080
+        },
+        audio : {
+            echoCancellation : true,
+            noiseSuppression : true,
+            autoGainControl  : true
+        }
+      }).then(function(mediaStream) {
+        document.querySelector('#video-share').srcObject = mediaStream;
+      }).catch(function(err) {
+        console.log(err.name + "," + err.message);
+      })
+    })
+  </script>
+</body>
+</html>

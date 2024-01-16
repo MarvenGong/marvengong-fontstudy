@@ -1,0 +1,247 @@
+.mine {
+	box-sizing: border-box;
+}
+.mine .header-card {
+	border-bottom: 1px solid #e5e5e5;
+}
+.mine .mine-header {
+	height: 164rpx;
+	padding: 0 40rpx;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.mine .mine-header.active {
+	background-color: #1a7cff;
+}
+.mine .mine-header .user-avatar {
+	width: 128rpx;
+	height: 128rpx;
+	border-radius: 120rpx;
+	position: relative;
+	overflow: hidden;
+	padding-right: 40rpx;
+}
+.mine .mine-header .user-avatar image {
+	display: none;
+	width: 128rpx;
+	height: 128rpx;
+	border-radius: 128rpx;
+	overflow: hidden;
+}
+.mine .mine-header .user-avatar image.show {
+	display: inline-block;
+}
+.mine .mine-header .user-avatar .default-avatar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+.mine .mine-header .user-avatar .login-avatar {
+	position: absolute;
+	z-index: 2;
+}
+.mine .mine-header .header-content {
+	flex-grow: 1;
+}
+.mine .mine-header .header-title {
+	max-width: 500rpx;
+	font-size: 44rpx;
+	line-height: 1.5;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.mine .mine-header .header-desc {
+	color: #888;
+	font-size: 32rpx;
+	vertical-align: middle;
+	position: relative;
+}
+.mine .item-desc {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 30rpx;
+}
+.mine .item-desc .desc-content {
+	display: inline-block;
+	font-size: 28rpx;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 300rpx;
+}
+.mine .item-desc .desc-arrow {
+	height: 30rpx;
+	width: 16rpx;
+	margin-left: 20rpx;
+}
+.mine .spinner {
+	margin-top: 0;
+}
+.mine .top-items {
+	height: 148rpx;
+	box-sizing: border-box;
+	text-align: center;
+}
+.mine .top-items .row-item {
+	padding: 30rpx 0 38rpx 0;
+	position: relative;
+}
+.mine .top-items .row-item:last-of-type::after {
+	display: none;
+}
+.mine .top-items .row-item .top-item-icon {
+	width: 48rpx;
+	height: 48rpx;
+}
+.mine .top-items .row-item .item-value {
+	line-height: 48rpx;
+	font-size: 40rpx;
+	max-width: 250rpx;
+	height: 48rpx;
+	margin-bottom: 12rpx;
+}
+.mine .top-items .row-item .item-title {
+	font-size: 28rpx;
+	color: #888;
+}
+.mine .top-items .row-item .hint-point {
+	position: absolute;
+	right: 50rpx;
+	top: 30rpx;
+}
+.functional-card {
+	padding: 40rpx 0;
+}
+.functional-card .row {
+	margin: 0 0 60rpx 0;
+}
+.functional-card .row:last-child {
+	margin-bottom: 0;
+}
+.functional-card .row .row-item {
+	flex: inherit;
+	width: 25%;
+	align-items: center;
+	text-align: center;
+	padding: 10rpx 0;
+	border-radius: 6rpx;
+}
+.functional-card .row .row-item .item-icon {
+	display: block;
+	margin: 0 auto 24rpx;
+	width: 48rpx;
+	height: 48rpx;
+}
+.functional-card .row .row-item .item-body {
+	font-size: 28rpx;
+	line-height: 26rpx;
+}
+.support-card {
+	position: relative;
+}
+.support-card .row-item {
+	position: relative;
+}
+.support-card .row-item button {
+	height: 188rpx;
+	position: relative;
+}
+.support-card .row-item .quick-item-icon {
+	width: 48rpx;
+	height: 48rpx;
+	position: absolute;
+	top: 70rpx;
+	left: 40rpx;
+}
+.support-card .row-item .quick-item {
+	position: absolute;
+	top: 58rpx;
+	left: 128rpx;
+}
+.support-card .row-item .quick-item .quick-item-title {
+	font-size: 28rpx;
+	line-height: 26rpx;
+	margin-bottom: 16rpx;
+}
+.support-card .row-item .quick-item .quick-item-desc {
+	font-size: 24rpx;
+	line-height: 24rpx;
+	color: #888888;
+}
+.support-card .row-item .quick-item-arrow {
+	width: 16rpx;
+	height: 30rpx;
+	position: absolute;
+	top: 78rpx;
+	right: 30rpx;
+}
+.support-card .row-item::after {
+	content: ' ';
+	position: absolute;
+	width: 1rpx;
+	background-color: #e5e5e5;
+	top: 40rpx;
+	height: 108rpx;
+	right: 0;
+	z-index: 2;
+}
+.support-card .row-item:last-of-type::after {
+	display: none;
+}
+.inline-card .inline-card-item {
+	font-size: 28rpx;
+	position: relative;
+	padding-left: 30rpx;
+	background-color: #fff;
+	height: 100rpx;
+	line-height: 100rpx;
+	display: flex;
+	align-items: center;
+}
+.inline-card .inline-card-item .item-icon {
+	width: 48rpx;
+	height: 48rpx;
+	margin-right: 40rpx;
+}
+.inline-card .inline-card-item .item-title {
+	font-size: 32rpx;
+	line-height: 32rpx;
+}
+.inline-card .inline-card-item .item-desc {
+	color: #888;
+}
+.inline-card .inline-card-item .point-left {
+	margin-left: 450rpx;
+}
+.inline-card .item-divider {
+	border-top: 1rpx solid #e5e5e5;
+	height: 0;
+}
+.inline-card .item-tips {
+	position: absolute;
+	right: 74rpx;
+}
+.inline-card .mfa-item {
+	display: flex;
+	align-items: center;
+}
+.inline-card .mfa-item .mfa-countdown {
+	height: 42rpx;
+	width: 30rpx;
+}
+.inline-card .mfa-item .mfa-countdown .mfa-countdown-bar {
+	height: 6rpx;
+	margin-bottom: 6rpx;
+}
+.inline-card .mfa-item .mfa-countdown .mfa-countdown-bar:last-of-type {
+	margin-bottom: 0;
+}
+.inline-card .mfa-item .item-token {
+	font-size: 44rpx;
+	margin-left: 30rpx;
+}

@@ -1,0 +1,12 @@
+*.sh
+node_modules
+lib
+coverage
+*.md
+*.scss
+*.less
+*.woff
+*.ttf
+
+packages/styles/**/*.js
+examples/components

@@ -1,0 +1,47 @@
+{
+  "name": "git auto merge",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "腾讯工蜂自动点击合并代码审核.",
+  "icons": { 
+    "128": "./img/icon-128.png",
+    "48": "./img/icon-48.png",
+    "16": "./img/icon-16.png"
+  },
+  "background_page": "bg.html",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "background": {
+    "scripts": ["/js/background.js"]
+  },
+  "permissions": [
+    "http://git.code.oa.com/",
+    "https://git.code.oa.com/",
+    "storage",
+    "notifications",
+    "tabs",
+    "bookmarks"
+  ],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "./img/icon-48.png",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://git.code.oa.com/*"],
+    "js": ["./js/jquery.min.js"],
+    "run_at": "document_end"
+  },{
+    "matches": [
+      "https://git.code.oa.com/**/merge_requests",
+      "https://git.code.oa.com/**/reviews"],
+    "js": ["./content_scripts/auto_merge.js"],
+    "run_at": "document_end"
+  },{
+    "matches": [
+      "https://git.code.oa.com/**/merge_requests/*",
+      "https://git.code.oa.com/**/reviews/*"
+    ],
+    "js": ["./content_scripts/merge.deal.js"],
+    "run_at": "document_end"
+  }]
+}

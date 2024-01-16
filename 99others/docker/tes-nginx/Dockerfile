@@ -1,0 +1,1 @@
+FROM 	csighub.tencentyun.com/cloud-energy/alpine:1.0.2

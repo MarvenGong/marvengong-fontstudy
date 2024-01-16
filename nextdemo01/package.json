@@ -1,0 +1,23 @@
+{
+  "name": "nextdemo01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:hosting": "npm run build && cloudbase hosting:deploy out -e marven-dcfe1b",
+    "deploy:function": "echo y | cloudbase functions:deploy -e marven-dcfe1b --force",
+    "run:cloudfunction:site-cms-data": "cloudbase functions:run --path ./cloudfunctions/site-cms-data"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

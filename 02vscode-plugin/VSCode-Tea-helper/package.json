@@ -1,0 +1,69 @@
+{
+  "name": "VSCode-Tea-helper",
+  "displayName": "VSCode-Tea-helper",
+  "version": "1.1.1",
+  "description": "",
+  "main": "./src/extension.js",
+  "scripts": {
+    "test": "A vscode extension for Tea"
+  },
+  "engines": {
+    "vscode": "^1.22.0"
+  },
+  "publisher": "marvengong",
+  "author": "1637077309@qq.com",
+  "license": "ISC",
+  "icon": "images/logo.jpg",
+  "categories": [
+    "Snippets"
+  ],
+  "languages": [{
+    "id": "javascript",
+    "extensions": [ ".js", ".jsx" ],
+    "aliases": [ "javascript", "js" ]
+  },{
+    "id": "typescript",
+    "extensions": [ ".ts", ".tsx" ],
+    "aliases": [ "typescript", "ts" ]
+  }],
+  "activationEvents": [
+      "onCommand:extension.sayHello",
+      "onStartupFinished",
+      "onLanguage:javascript",
+      "onLanguage:javascriptreact",
+      "onLanguage:typescript",
+      "onLanguage:typescriptreact",
+      "onLanguage:html"
+  ],
+  "contributes": {
+    "menus": {
+      "explorer/context": [{
+          "when": "explorerViewletVisible && explorerResourceIsFolder",
+          "command": "extension.newReactFunctionComp",
+          "alt": "extension.newReactClassComp",
+          "group": "navigation"
+      }]
+    },
+    "commands": [
+        {
+          "command": "extension.sayHello",
+          "title": "Hello World"
+        },
+        {
+          "command": "extension.newReactFunctionComp",
+          "title": "New React Function Component"
+        },
+        {
+          "command": "extension.newReactClassComp",
+          "title": "New React Class Component"
+        }
+    ],
+    "snippets": [
+      { "language": "javascript", "path": "./snippets/tea-ui.json" },
+      { "language": "javascriptreact", "path": "./snippets/tea-ui.json" },
+      { "language": "typescript", "path": "./snippets/tea-ui.json" },
+      { "language": "typescriptreact", "path": "./snippets/tea-ui.json" },
+      { "language": "html", "path": "./snippets/tea-ui.json" }
+    ]
+  }
+}

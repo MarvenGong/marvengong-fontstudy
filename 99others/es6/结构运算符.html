@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="./libs/jquery.min.js"></script>
+</head>
+<body>
+  <script>
+    /**
+     * 递归处理文件列表为树形结构
+     * @param {*} fileAry
+     * @param {*} pid
+     * @returns
+     */
+    function deepWrapFile(fileAry) {
+      const ary = [];
+      // fileAry.filter(item => item.pid === pid).forEach((ele) => {
+      //   if (ele.type === 'blob') {
+      //     ary.push({
+      //       ...ele,
+      //       icon: 'jstree-file',
+      //     });
+      //   } else {
+      //     ary.push({
+      //       ...ele,
+      //       children: deepWrapFile(fileAry, ele.id),
+      //     });
+      //   }
+      // });
+      fileAry.map((obj) =>  {
+        // 先去掉前面和后面的斜杠，再根据斜杠把文件路径转换成路径数组 如 /a/b.js => [a, b.js]
+        const splitpath = obj.name.replace(/^\/|\/$/g, '').split('/');
+        let ptr = ary;
+        for (let i = 0; i < splitpath.length; i++) {
+          const node = {
+            name: splitpath[i],
+            path: splitpath,
+            text: splitpath[i], // jstree需要的属性
+            state: obj.state, // jstree需要的属性
+            type: obj.type,
+            data: {
+              nodeId: obj.id,
+            },
+          };
+          if (obj.type === 'blob') {
+            node.icon = 'jstree-file';
+          }
+          // if (i === splitpath.length - 1) {
+          //   node.size = obj.size;
+          // }
+          const Index = ptr.findIndex(item => item.name === splitpath[i]);
+          if (Index === -1) {
+            ptr.push(node);
+            ptr[ptr.length - 1].children = [];
+          } else {
+            ptr[Index].children = ptr[Index].children;
+          }
+          const index = Index > -1 ? Index : ptr.length - 1;
+          ptr = ptr[index].children;
+        }
+        return ptr;
+      });
+      return ary;
+    }
+    $.ajax({
+      type: 'get',
+      url: 'https://git.woa.com/api/v3/projects/697931/repository/tree',
+      data: {
+        private_token: '0CQOgW1jArG8NQyhn9qH',
+        recursive: true,
+        ref_name: 'master',
+      },
+      success(resp) {
+        const array = resp;
+        console.log(deepWrapFile(array))
+      },
+    });
+    let saidHello = false;
+const VERSION = '$_VERSION';
+
+/**
+ * Skips the hello message of renderers that are created after this is run.
+ *
+ * @function skipHello
+ * @memberof PIXI.utils
+ */
+function skipHello()
+{
+    saidHello = true;
+}
+
+/**
+ * Logs out the version and renderer information for this running instance of PIXI.
+ * If you don't want to see this message you can run `PIXI.utils.skipHello()` before
+ * creating your renderer. Keep in mind that doing that will forever make you a jerk face.
+ *
+ * @static
+ * @function sayHello
+ * @memberof PIXI.utils
+ * @param {string} type - The string renderer type to log.
+ */
+function sayHello(type)
+{
+    if (saidHello)
+    {
+        return;
+    }
+
+    if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1)
+    {
+        const args = [
+            `\n %c %c %c PixiJS ${VERSION} - ✰ ${type} ✰  %c  %c  http://www.pixijs.com/  %c %c ♥%c♥%c♥ \n\n`,
+            'background: #ff66a5; padding:5px 0;',
+            'background: #ff66a5; padding:5px 0;',
+            'color: #ff66a5; background: #030307; padding:5px 0;',
+            'background: #ff66a5; padding:5px 0;',
+            'background: #ffc3dc; padding:5px 0;',
+            'background: #ff66a5; padding:5px 0;',
+            'color: #ff2424; background: #fff; padding:5px 0;',
+            'color: #ff2424; background: #fff; padding:5px 0;',
+            'color: #ff2424; background: #fff; padding:5px 0;',
+        ];
+
+        self.console.log(...args);
+    }
+    else if (self.console)
+    {
+        self.console.log(`PixiJS ${VERSION} - ${type} - http://www.pixijs.com/`);
+    }
+
+    saidHello = true;
+}
+sayHello('type')
+    
+  </script>
+</body>
+</html>

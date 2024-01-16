@@ -1,0 +1,71 @@
+page {
+	background-color: #f8f8f8;
+}
+
+.spinner {
+	display: inline-block;
+	margin-top: 40rrpx;
+	height: 12rrpx;
+	line-height: 12rrpx;
+}
+.spinner > view {
+	display: inline-block;
+	width: 12rrpx;
+	height: 12rrpx;
+	margin-right: 14rrpx;
+	background-color: #888;
+	border-radius: 100%;
+	animation: sk-opacity 1.4s infinite ease-in-out both;
+	vertical-align: middle;
+}
+.spinner > view:last-of-type {
+	margin-right: 0;
+}
+.spinner.white > view {
+	background-color: #fff;
+}
+.spinner .bounce1 {
+	animation-delay: -0.32s;
+}
+.spinner .bounce2 {
+	animation-delay: -0.16s;
+}
+@keyframes sk-opacity {
+	0%,
+	80%,
+	100% {
+		opacity: .4;
+	}
+	40% {
+		opacity: 1;
+	}
+}
+
+/**
+ * 处理点击态，约定：需要点击态的元素不要设置::before属性，避免优先级不可控（小程序不支持!important）
+ * view 上的点击态的类（hover-class）统一叫做：.button-hover，与button默认值统一
+ */
+view.need-hover,
+button {
+	position: relative;
+}
+view.need-hover.hover::before,
+button.button-hover::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.card {
+	background-color: #fff;
+	margin-bottom: 20rpx;
+}
+
+.card .card-header {
+	height: 90rpx;
+}

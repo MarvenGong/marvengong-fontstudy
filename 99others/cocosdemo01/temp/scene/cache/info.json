@@ -1,0 +1,11 @@
+{
+    "systemInfo": {
+        "arch": "x64",
+        "cpu": "Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz",
+        "version": "Darwin Kernel Version 22.6.0: Wed Jul  5 22:21:56 PDT 2023; root:xnu-8796.141.3~6/RELEASE_X86_64"
+    },
+    "sceneListMap": {
+        "a9aa0d09-006b-45c7-ad87-f31df5b997ac": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/ScenePlay.scene"
+    },
+    "deviceMd5": "f3034722259962770352115a01003ae3"
+}

@@ -1,0 +1,282 @@
+{
+  "version": "1.0.0",
+  "map": {
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource.meta": {
+      "time": 1698032629054.7043
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource": {
+      "time": 1698032775774.9924,
+      "uuid": "b23fc0d1-2fc9-4613-b3e9-a118abde4748"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src.meta": {
+      "time": 1698032642254.545
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src": {
+      "time": 1698153511215.5195,
+      "uuid": "ba140ab6-812f-45b1-9fbb-5ca12e9a9d6b"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/Common.png.meta": {
+      "time": 1698032775883.928
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/bg.jpg.meta": {
+      "time": 1698032775848.1565
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/bullet.png.meta": {
+      "time": 1698032775925.835
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/enemy.png.meta": {
+      "time": 1698032775846.0771
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion1.png.meta": {
+      "time": 1698032775834.7903
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion10.png.meta": {
+      "time": 1698032775896.7893
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion11.png.meta": {
+      "time": 1698032775899.4739
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion12.png.meta": {
+      "time": 1698032775905.0242
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion13.png.meta": {
+      "time": 1698032775936.4111
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion14.png.meta": {
+      "time": 1698032775947.931
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion15.png.meta": {
+      "time": 1698032775961.204
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion16.png.meta": {
+      "time": 1698032775965.475
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion17.png.meta": {
+      "time": 1698032775976.1843
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion18.png.meta": {
+      "time": 1698032775998.8042
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion19.png.meta": {
+      "time": 1698032776004.4487
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion2.png.meta": {
+      "time": 1698032776021.9429
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion3.png.meta": {
+      "time": 1698032776021.0461
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion4.png.meta": {
+      "time": 1698032776046.4622
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion5.png.meta": {
+      "time": 1698032776057.2175
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion6.png.meta": {
+      "time": 1698032776069.1096
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion7.png.meta": {
+      "time": 1698032776090.23
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion8.png.meta": {
+      "time": 1698032776088.3525
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion9.png.meta": {
+      "time": 1698032776094.9724
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/hero.png.meta": {
+      "time": 1698032776101.0544
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion1.png": {
+      "time": 1697457514590.8696,
+      "uuid": "a511bf92-e36c-460b-80ad-dcd842bd0f2f"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/enemy.png": {
+      "time": 1697457514590.684,
+      "uuid": "55fdca70-5ba2-4aa8-ba5c-9c7f761dd864"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/bg.jpg": {
+      "time": 1697457514590.0745,
+      "uuid": "3dff05f6-2773-4132-8467-27e267dbf13a"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/Common.png": {
+      "time": 1697457514590.4814,
+      "uuid": "446f9063-401e-47d0-8989-64c0dac11d1f"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion10.png": {
+      "time": 1697457514591.0776,
+      "uuid": "52230a54-8085-4165-8b5d-7b5170b63249"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion11.png": {
+      "time": 1697457514591.3853,
+      "uuid": "6f8f65de-8c4d-49bb-b03e-cf6a9834fe36"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion12.png": {
+      "time": 1697457514591.6084,
+      "uuid": "90c95f1c-a054-4f0d-af31-2e37ce2bb4f0"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/bullet.png": {
+      "time": 1697457514590.2878,
+      "uuid": "40ba1fc2-c999-4dc4-95d8-91be5ee820e6"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion13.png": {
+      "time": 1697457514591.7979,
+      "uuid": "bab761f2-66f6-4b00-8c08-73149aee62e6"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion14.png": {
+      "time": 1697457514591.9788,
+      "uuid": "68c22707-e51f-43d7-8472-6ff2265111e9"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion15.png": {
+      "time": 1697457514592.164,
+      "uuid": "10e65226-5096-4f3d-8b1c-d638e8d6f045"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion16.png": {
+      "time": 1697457514592.3406,
+      "uuid": "63ae600b-bc46-4a0b-bfa4-533ede52605d"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion17.png": {
+      "time": 1697457514592.5369,
+      "uuid": "0827998c-8488-418f-b4c3-1b6aef37615c"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion18.png": {
+      "time": 1697457514592.7266,
+      "uuid": "a9b0cb87-544c-4349-88d0-8da1f13b6575"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion19.png": {
+      "time": 1697457514592.9177,
+      "uuid": "9a7be4f8-7c96-420c-b6f0-ea8f5af81af4"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion3.png": {
+      "time": 1697457514593.3757,
+      "uuid": "78b77ac8-ac2a-48a1-97b9-f80ae617e046"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion2.png": {
+      "time": 1697457514593.1587,
+      "uuid": "4163a59d-ae55-416c-84aa-29f14b47cf07"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion4.png": {
+      "time": 1697457514593.5918,
+      "uuid": "2569c95f-fb4a-47a8-a826-16aee40922b8"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion5.png": {
+      "time": 1697457514593.78,
+      "uuid": "52743d79-420d-4477-be44-8b938905391d"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion6.png": {
+      "time": 1697457514593.9595,
+      "uuid": "18ccb626-6668-4c43-a2eb-e631a8d82da7"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion8.png": {
+      "time": 1697457514594.3013,
+      "uuid": "f69afcb9-2483-4137-b4b2-c8f775c556f3"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion7.png": {
+      "time": 1697457514594.1274,
+      "uuid": "19efdee0-2a29-4746-88fd-33440e2a74c2"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/explosion9.png": {
+      "time": 1697457514594.472,
+      "uuid": "91009c9b-c318-47b9-a207-e8b048458ccb"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/resource/hero.png": {
+      "time": 1697457514594.6797,
+      "uuid": "9a96b510-7618-4074-a36a-8f5cc40c50bc"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes.meta": {
+      "time": 1698153449418.601
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes": {
+      "time": 1698154163981.4163,
+      "uuid": "1367f3f5-a5d2-4627-9712-af0b35236a45"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/gameover.scene.meta": {
+      "time": 1698043449961.7405
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/gameover.scene": {
+      "time": 1698043459747.5247,
+      "uuid": "9ac2f5d8-32b9-48e2-a220-e269af39c425"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/sceneStart.scene.meta": {
+      "time": 1698046635665.032
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/sceneStart.scene": {
+      "time": 1698046635660.5342,
+      "uuid": "a95fee8a-cb93-40eb-94df-67825996b729"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts.meta": {
+      "time": 1698153505293.2654
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts": {
+      "time": 1698157190125.7307,
+      "uuid": "0de4e3bc-79d7-4975-8ba3-77146880539f"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/start.meta": {
+      "time": 1698043822602.4236
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/start": {
+      "time": 1698043848763.5017,
+      "uuid": "2750b59a-2cf9-4d22-9354-3562873f0cee"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/start/btnStart.ts.meta": {
+      "time": 1698043848764.621
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/start/btnStart.ts": {
+      "time": 1698154240313.2485,
+      "uuid": "4fd282ba-9dd0-4028-8d7b-d5f256f19a6f"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/ScenePlay.scene.meta": {
+      "time": 1698154163983.985
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scenes/ScenePlay.scene": {
+      "time": 1698155398952.3765,
+      "uuid": "a9aa0d09-006b-45c7-ad87-f31df5b997ac"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/playing.meta": {
+      "time": 1698157190126.4524
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/playing": {
+      "time": 1698157233009.146,
+      "uuid": "f5c9aa24-d3e3-44d9-8af8-527155ca92b5"
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/playing/bg.ts.meta": {
+      "time": 1698157206660.4539
+    },
+    "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/playing/bg.ts": {
+      "time": 1698160423169.367,
+      "uuid": "f06a81d2-3698-4fba-9766-4bf97e7ba7cb"
+    }
+  },
+  "missing": {
+    "9ac2f5d8-32b9-48e2-a220-e269af39c425": {
+      "path": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/gameover.scene",
+      "time": 1698043459747.5247,
+      "removeTime": 1698153469944
+    },
+    "1367f3f5-a5d2-4627-9712-af0b35236a45": {
+      "path": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/s'cen's",
+      "time": 1698153449416.3318,
+      "removeTime": 1698153462159
+    },
+    "a95fee8a-cb93-40eb-94df-67825996b729": {
+      "path": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/sceneStart.scene",
+      "time": 1698046635660.5342,
+      "removeTime": 1698153472639
+    },
+    "2750b59a-2cf9-4d22-9354-3562873f0cee": {
+      "path": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/start",
+      "time": 1698043848763.5017,
+      "removeTime": 1698153511216
+    },
+    "4fd282ba-9dd0-4028-8d7b-d5f256f19a6f": {
+      "path": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/start/btnStart.ts",
+      "time": 1698046414684.789,
+      "removeTime": 1698153511217
+    },
+    "f06a81d2-3698-4fba-9766-4bf97e7ba7cb": {
+      "path": "/Users/gongminghua/Public/02fontstudy/99others/cocosdemo01/assets/src/scripts/playing/bg.ts.ts",
+      "time": 1698157206658.7708,
+      "removeTime": 1698157233009
+    }
+  }
+}

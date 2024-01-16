@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/popup.css" />
+  <title>git auto merge</title>
+</head>
+<body>
+  <div class="popup-wraper" >
+    <div id="app">
+      <h3>{{ name }}</h3>
+      <div class="book-list">
+        <input type="text" placeholder="输入名称搜索" v-model="searchKey"/>
+        <ul>
+          <li v-for="(item, index) in bookmarks.filter(item => item.title.indexOf(searchKey) >= 0)" 
+            :key="index">
+            <a v-if="!item.children"
+              style="padding-left: 22px;"
+              @click="handleClick(item.url)" :href="item.url">
+              {{item.title}}
+            </a>
+            <a v-else @click="handleClickFolder(item.id)">
+              <img width="15" href="javascript:;" src="/img/folder.png" />{{item.title}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/vue.min.js"></script>
+  <script src="./js/popup.js"></script>
+</body>
+</html>

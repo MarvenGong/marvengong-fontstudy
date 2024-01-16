@@ -1,0 +1,44 @@
+{
+  "name": "@tencent/tea-app-app-entry",
+  "version": "1.0.0",
+  "description": "The app-entry tea app",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "tea dev",
+    "build": "tea build",
+    "scan": "tea scan"
+  },
+  "keywords": [
+    "tea",
+    "app",
+    "app-entry"
+  ],
+  "engines": {},
+  "license": "UNLICENSED",
+  "browserslist": [
+    "defaults",
+    "last 3 versions",
+    "not ie < 11"
+  ],
+  "dependencies": {
+    "@micro-zoe/micro-app": "^0.5.2",
+    "@tencent/tea-component": "^2.2.1",
+    "core-js": "^3.6.5",
+    "history": "^4.9.0",
+    "moment": "^2.24.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-router-dom": "^5.2.0",
+    "regenerator-runtime": "^0.13.7",
+    "single-spa": "^5.9.3"
+  },
+  "devDependencies": {
+    "@hot-loader/react-dom": "^16.11.0",
+    "@tencent/tea-scripts": "^2.0.0",
+    "@tencent/tea-types": "^0.1.9",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router-dom": "^5.1.5",
+    "@types/webpack": "^4.4.32"
+  }
+}

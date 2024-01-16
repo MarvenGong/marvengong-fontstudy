@@ -1,0 +1,26 @@
+.simple-graph-wraper {
+  box-sizing: border-box;
+  flex-grow: 1;
+  & * {
+    box-sizing: border-box;
+  }
+  .draw-map {
+    position: relative;
+    svg {
+      // position: absolute;
+      // z-index: 12;
+    }
+    .people-item {
+      background: #f5f5f5;
+      width: 200px;
+      height: 100px;
+      line-height: 100px;
+      vertical-align: middle;
+      text-align: center;
+      display: inline-block;
+      border: 1px solid #ccc;
+      position: absolute;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.popup-wraper {
+  width: 600px;
+  height: 600px;
+}
+.book-list li {
+  list-style: none;
+  height: 26px;
+  line-height: 26px;
+  border-bottom: 1px solid #ddd;
+}
+.book-list ul {
+  margin: 0;
+  padding: 0;
+}
+.book-list li a {
+  display: block;
+  height: 26px;
+  line-height: 26px;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+.book-list li a img {
+  margin-right: 5px;
+  position: relative;
+  top: -1px;
+}
+.book-list li a:hover {
+  color: blue;
+}

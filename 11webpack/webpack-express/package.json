@@ -1,0 +1,28 @@
+{
+  "name": "webpack-express",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./dist/server.js",
+    "build": "webpack"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-serve-static-core": "^0.1.1",
+    "http-errors": "~1.6.3",
+    "less-middleware": "~2.2.1",
+    "morgan": "~1.9.1"
+  },
+  "main": "app.js",
+  "author": "marvengong",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1",
+    "@types/express": "^4.17.8"
+  }
+}

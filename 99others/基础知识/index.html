@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>判断微信授权允许浏览器</title>
+</head>
+<body>
+  <script src="./ua-parser.min.js"></script>
+  <script>
+    const WECHAT_SUPPORT_DEVICE = [
+		{
+			// 微信内 webview
+			browser: 'wechat'
+		},
+		{
+			// uc浏览器
+			browser: 'ucbrowser'
+		},
+		{
+			// qq 浏览器
+			browser: 'qqbrowser'
+		},
+		{
+			// ios safari 浏览器
+			browser: 'mobile safari', os: 'ios'
+		}
+	];
+  let parser = new UAParser(navigator.userAgent); // you need to pass the user-agent for nodejs
+  
+  let parserResults = parser.getBrowser();
+  alert(JSON.stringify(parserResults)); // {}
+  const browserName = parserResults.name;
+  const isValid = WECHAT_SUPPORT_DEVICE.some(function(item) {
+    return item.browser === browserName.toLowerCase();
+  });
+  alert(isValid)
+  </script>
+</body>
+</html>

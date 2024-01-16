@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="container"></div>
+  <script>
+    container.style.height = '200px';
+    function hello(name, age) {
+      console.log('my name is ' + name + ', i am ' + age + ' years old, my height is ' + this.height);
+    }
+    let CallFunc = {
+      height: 170
+    };
+    
+    function ApplyFunc() {};
+    ApplyFunc.height = 180;
+
+    hello('潘神', 332);
+    hello.call(CallFunc, 'zhangsan', 12);
+    hello.apply(CallFunc, ['张三', 50])
+  </script>
+</body>
+</html>

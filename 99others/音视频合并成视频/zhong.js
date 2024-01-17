@@ -43,38 +43,30 @@ const startRecording = async () => {
 	startRecordingButton.style.display = 'none';
 
 	// Check for AudioEncoder availability
-	if (typeof AudioEncoder !== 'undefined') {
-		// Try to get access to the user's microphone
-		try {
-			// let userMedia = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
-			// audioTrack = userMedia.getAudioTracks()[0];
+	// if (typeof AudioEncoder !== 'undefined') {
+	// 	// Try to get access to the user's microphone
+	// 	try {
+	// 		// let userMedia = await navigator.mediaDevices.getUserMedia({ video: false, audio: true });
+	// 		// audioTrack = userMedia.getAudioTracks()[0];
 
-      audioTrack = myAudio.captureStream().getAudioTracks()[0];
-      // MediaStreamTrackProcessor可以用来生成媒体帧流
-      // let trackProcessor = new MediaStreamTrackProcessor({
-      //     track: audioTrack
-      // });
-
-      // // 音频播放，并实时抓取视频流
-      // // 交给webcodecs API进行编码
-      myAudio.play();
-      // // 编码音频数据
-      // let consumer = new WritableStream({
-      //     write(audioData) {
-      //         // console.dir(audioData);
-      //         if (!audioEncoder) {
-      //             return;
-      //         }
-      //         audioEncoder.encode(audioData);
-      //         audioData.close();
-      //     }
-      // });
-      // trackProcessor.readable.pipeTo(consumer);
-		} catch (e) {}
-		if (!audioTrack) console.warn("Couldn't acquire a user media audio track.");
-	} else {
-		console.warn('AudioEncoder not available; no need to acquire a user media audio track.');
-	}
+  //     audioTrack = myAudio.captureStream().getAudioTracks()[0];
+  //     // // 编码音频数据
+  //     // let consumer = new WritableStream({
+  //     //     write(audioData) {
+  //     //         // console.dir(audioData);
+  //     //         if (!audioEncoder) {
+  //     //             return;
+  //     //         }
+  //     //         audioEncoder.encode(audioData);
+  //     //         audioData.close();
+  //     //     }
+  //     // });
+  //     // trackProcessor.readable.pipeTo(consumer);
+	// 	} catch (e) {}
+	// 	if (!audioTrack) console.warn("Couldn't acquire a user media audio track.");
+	// } else {
+	// 	console.warn('AudioEncoder not available; no need to acquire a user media audio track.');
+	// }
 
 	endRecordingButton.style.display = 'block';
 
@@ -96,7 +88,7 @@ const startRecording = async () => {
 		} : undefined,
 		firstTimestampBehavior: 'offset' // Because we're directly piping a MediaStreamTrack's data into it
 	});
-
+  
 	videoEncoder = new VideoEncoder({
 		output: (chunk, meta) => muxer.addVideoChunk(chunk, meta),
 		error: e => console.error(e)
